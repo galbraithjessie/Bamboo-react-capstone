@@ -1,4 +1,40 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './button.scss';
+@import './grid.scss';
+
+//rich text editor base styles
+@import './react-draft-wysiwyg.scss';
+@import './rich-text-editor.scss';
+
+//footer and navigation
+@import './navigation/navigation-container.scss';
+@import './footer.scss';
+
+//pages
+@import './pages/about.scss';
+@import './pages/home.scss';
+@import './pages/packaging.scss';
+@import './pages/contact.scss';
+@import './pages/blog.scss';
+@import './pages/blog-detail.scss';
+@import './pages/login.scss';
+@import './pages/software.scss';
+@import './pages/tryitfree.scss';
+
+//Modals
+@import './blogModal.scss';
+
+//widgets 
+@import './chatWidget.scss';
+
+//mobile responsive sass files
+@import './media-responsive/mobile.scss';
+
+// @import url("font-awesome/css/fontawesome-all.min.css");
+
 html {
+    box-sizing: border-box;
     font-size: 62.5%; // 1rem is 10px
 }
 
@@ -7,8 +43,8 @@ html {
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
 }
 
 body {
@@ -21,8 +57,9 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.app {
-    margin-top: 2rem;
+.container {
     display: grid;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    
 }
+
