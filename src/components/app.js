@@ -14,7 +14,7 @@ import Navbar from './navigation/navigation-container';
 import FooterContainer from './footer/footer';
 import Icons from "../helpers/icons";
 
-import ChatWidget from './widgets/chatWidget';
+// import ChatWidget from './widgets/chatWidget';
 
 
 export default class App extends Component {
@@ -46,7 +46,7 @@ export default class App extends Component {
                 </Switch>
 
             
-            <ChatWidget />
+           
             <FooterContainer />
           </div>
         </Router>
