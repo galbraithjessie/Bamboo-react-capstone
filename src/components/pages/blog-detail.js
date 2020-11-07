@@ -54,7 +54,8 @@ export default class BlogDetail extends Component {
        const contentManager = () => {
            if (this.state.editMode) {
                return <BlogForm 
-               editMode={this.state.editMode} 
+               editMode={this.state.editMode}
+               handleUpdateFormSubmission={this.handleUpdateFormSubmission}
                blog={this.state.blogItem}
                />
            } else {
